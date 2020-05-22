@@ -18,12 +18,12 @@ body {
   font-family: "Josefin Sans", sans-serif;
   height: 100vh;
 }
-.container {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  vertical-align: middle;
-}
+// .container {
+//   display: flex;
+//   flex-flow: column;
+//   justify-content: center;
+//   vertical-align: middle;
+// }
 .wrapper {
   max-width: 1440px;
   display: grid;
@@ -129,13 +129,13 @@ body {
           background-color: transparent;
           outline: none;
 
+
           &.error {
             background-image: url("../images/icon-error.svg");
             background-repeat: no-repeat;
             background-position: right;
-            background-position-x: 220px;
+            background-position-x: 208px;
           }
-
           &:hover {
             outline: none;
           }
@@ -155,7 +155,6 @@ body {
           display: none;
         }
       }
-
       #button {
         background: $gradient2;
         position: relative;
@@ -163,9 +162,8 @@ body {
         width: 130px;
         box-shadow: 2px 5px 21px -4px rgb(229, 109, 121);
         border-radius: 30px;
-        // display: flex;
-        // text-align: center;
-        // justify-content: center;
+        border: none;
+        outline: none;
 
         img {
           position: absolute;
@@ -175,7 +173,7 @@ body {
         }
 
         &:hover {
-          background: $unsaturated-red;
+          background: #f5cccc;
         }
       }
     }
@@ -193,11 +191,10 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
-  }
-
 }
 
 footer {
