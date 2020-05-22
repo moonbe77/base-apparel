@@ -129,13 +129,6 @@ body {
           background-color: transparent;
           outline: none;
 
-
-          &.error {
-            background-image: url("../images/icon-error.svg");
-            background-repeat: no-repeat;
-            background-position: right;
-            background-position-x: 208px;
-          }
           &:hover {
             outline: none;
           }
@@ -147,6 +140,13 @@ body {
           &:invalid {
             outline: none;
           }
+        }
+        .inputErrorAlert {
+          position: relative;
+          right: 1rem;
+          top: 50%;
+          transform: translate(259px, -60px);
+          display: none;
         }
 
         #status {

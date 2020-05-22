@@ -149,13 +149,6 @@ body {
   outline: none;
 }
 
-.left .content #form #inputWrapper input.error {
-  background-image: url("../images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-x: 208px;
-}
-
 .left .content #form #inputWrapper input:hover {
   outline: none;
 }
@@ -166,6 +159,15 @@ body {
 
 .left .content #form #inputWrapper input:invalid {
   outline: none;
+}
+
+.left .content #form #inputWrapper .inputErrorAlert {
+  position: relative;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translate(259px, -60px);
+          transform: translate(259px, -60px);
+  display: none;
 }
 
 .left .content #form #inputWrapper #status {
