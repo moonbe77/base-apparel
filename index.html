@@ -36,11 +36,18 @@
             <div id="text">
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
-              and our launch deals. Email Address
+              and our launch deals.
             </div>
             <div id="form">
-              <div id="input">
-                <input type="email" name="" id="" placeholder="Email Address" />
+              <div id="inputWrapper">
+                <input
+                  class="error"
+                  type="email"  
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <div id="status">Please provide a valid email</div>
               </div>
               <div id="button">
                 <img src="./images/icon-arrow.svg" alt="" />
@@ -53,11 +60,12 @@
       <footer>
         <p class="attribution">
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor</a
           >. Coded by <a href="#">Bernardo Munz</a>.
         </p>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
