@@ -129,22 +129,22 @@ body {
           background-color: transparent;
           outline: none;
 
-          .error {
+          &.error {
             background-image: url("../images/icon-error.svg");
             background-repeat: no-repeat;
             background-position: right;
             background-position-x: 220px;
           }
 
-          ::hover {
+          &:hover {
             outline: none;
           }
 
-          ::focus {
+          &:focus {
             outline: none;
           }
 
-          ::invalid {
+          &:invalid {
             outline: none;
           }
         }

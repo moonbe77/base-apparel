@@ -8,9 +8,8 @@ btn.addEventListener("click", (event) => {
 });
 
 const btnClick = (e) => {
-  console.log(inputWrapper);
-
-  if (!validateEmail(input.value)) {
+  
+  if (!validateEmail(input.value)&&input.value) {
     status.style.display = "block";
     inputWrapper.classList.add("error");
     input.classList.add("error");
@@ -19,6 +18,7 @@ const btnClick = (e) => {
     inputWrapper.classList.remove("error");
     input.classList.remove("error");
   }
+
 };
 
 function validateEmail(email) {

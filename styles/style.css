@@ -163,22 +163,22 @@ body {
   outline: none;
 }
 
-.left .content #form #inputWrapper input .error {
+.left .content #form #inputWrapper input.error {
   background-image: url("../images/icon-error.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 220px;
 }
 
-.left .content #form #inputWrapper input ::hover {
+.left .content #form #inputWrapper input:hover {
   outline: none;
 }
 
-.left .content #form #inputWrapper input ::focus {
+.left .content #form #inputWrapper input:focus {
   outline: none;
 }
 
-.left .content #form #inputWrapper input ::invalid {
+.left .content #form #inputWrapper input:invalid {
   outline: none;
 }
 
