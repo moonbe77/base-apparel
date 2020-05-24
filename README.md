@@ -15,5 +15,5 @@ coded by me using
  * CSS Grid version
  * CSS Flex version
 
-![Image of my version](../result/resultV1.jpg)
+![Image of my version](https://github.com/moonbe77/baseapparel/blob/master/result/resultV1.jpg?raw=true)
 
