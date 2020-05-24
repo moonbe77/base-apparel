@@ -14,3 +14,6 @@ coded by me using
  * Responsive layout
  * CSS Grid version
  * CSS Flex version
+
+![Image of my version](../result/resultV1.jpg)
+
