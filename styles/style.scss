@@ -15,6 +15,8 @@ $gradient2: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
 }
 body {
   margin: auto;
+  // display: flex;
+  // align-items: center;
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
   height: 100vh;
@@ -23,7 +25,7 @@ body {
 }
 
 h1 {
-  font-size: 3.7em;
+  font-size: 4.3em;
   margin: 0px;
   font-weight: 600;
   letter-spacing: 11px;
@@ -79,22 +81,71 @@ h1 {
 .info-content {
   padding-left: 180px;
   padding-right: 200px;
+  margin-top: -150px;
 
-  & .info-content_logo {
+  .info-content_logo {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
+    margin-top: 50px;
   }
 
-  & .info-content_text {
-    margin-bottom: 60px;
+  .info-content_text {
+    margin-bottom: 40px;
     & .we {
       color: $unsaturated-red;
       font-weight: 300;
     }
+    & p {
+      color: $unsaturated-red;
+      line-height: 30px;
+    }
   }
-  & p {
-    color: $unsaturated-red;
-    line-height: 30px;
+  & .info-content_form {
+    // display: flex;
+    // flex-direction: row;
+    .input-wrapper {
+      display: flex;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 60px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 50px;
+        background-color: transparent;
+        color: $soft-red;
+        outline: none;
+        padding: 0 0 0 20px;
+        font-size: 1.2em;
+        & .error {
+          border: 1px solid red !important;
+        }
+      }
+      #button {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 130px;
+        height: 60px;
+        background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+        -webkit-box-shadow: 2px 5px 21px -4px #e56d79;
+        box-shadow: 2px 5px 21px -4px #e56d79;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+      }
+      .input-icon_alert {
+        position: absolute;
+        right: 140px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+      }
+    }
+    & #status {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 1200px) {

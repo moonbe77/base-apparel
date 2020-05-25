@@ -21,6 +21,7 @@
         <div class="model">
           <img src="./images/hero-desktop.jpg" alt="Photo of Model Posing" />
         </div>
+
         <div class="info-wrapper">
           <div class="info-content">
             <div class="info-content_logo">
@@ -47,15 +48,23 @@
                 announcements and our launch deals.
               </p>
             </div>
-            <div class="info_content_form">
-              <div id="inputWrapper" aria-label="Form to send email">
+            <div class="info-content_form">
+              <div class="input-wrapper">
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email Address"
                 />
-                <div class="inputErrorAlert">
+
+                <button id="button" aria-label="Button to send email">
+                  <img
+                    src="./images/icon-arrow.svg"
+                    alt="Image on button send Email"
+                  />
+                </button>
+
+                <div class="input-icon_alert">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -71,14 +80,8 @@
                     </g>
                   </svg>
                 </div>
-                <div id="status">Please provide a valid email</div>
               </div>
-              <button id="button" aria-label="Button to send email">
-                <img
-                  src="./images/icon-arrow.svg"
-                  alt="Image on button send Email"
-                />
-              </button>
+              <div id="status">Please provide a valid email</div>
             </div>
           </div>
         </div>
