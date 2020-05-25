@@ -47,30 +47,32 @@ h1 {
   .info-wrapper {
     flex-grow: 0;
     order: 1;
+    display: flex;
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: 1200px) {
-    .model {
-      flex-shrink: 1;
-    }
+  // @media only screen and (max-width: 1200px) {
+  //   .model {
+  //     flex-shrink: 1;
+  //   }
 
-    .info-wrapper {
-      flex-shrink: 2;
-    }
-  }
-  @media only screen and (max-width: 920px) {
-    flex-flow: column;
+  //   .info-wrapper {
+  //     flex-shrink: 2;
+  //   }
+  // }
+  // @media only screen and (max-width: 920px) {
+  //   flex-flow: column;
 
-    .model {
-      flex-shrink: 1;
-      order: 1;
-      width: 100%;
-    }
+  //   .model {
+  //     flex-shrink: 1;
+  //     order: 1;
+  //     width: 100%;
+  //   }
 
-    .info-wrapper {
-      flex-shrink: 2;
-    }
-  }
+  //   .info-wrapper {
+  //     flex-shrink: 2;
+  //   }
+  // }
 }
 
 .model {
@@ -78,17 +80,15 @@ h1 {
     width: 100%;
   }
 }
-
+.info-content_logo {
+  // position: absolute;
+  // margin-bottom: 120px;
+  // margin-top: 5%;
+}
 .info-content {
   padding-left: 180px;
   padding-right: 200px;
   margin-top: -150px;
-
-  .info-content_logo {
-    position: relative;
-    margin-bottom: 120px;
-    margin-top: 50px;
-  }
 
   .info-content_text {
     margin-bottom: 40px;
@@ -101,9 +101,11 @@ h1 {
       line-height: 30px;
     }
   }
+
   & .info-content_form {
     // display: flex;
     // flex-direction: row;
+
     .input-wrapper {
       display: flex;
       position: relative;
@@ -118,10 +120,12 @@ h1 {
         outline: none;
         padding: 0 0 0 20px;
         font-size: 1.2em;
+
         & .error {
           border: 1px solid red !important;
         }
       }
+
       #button {
         position: absolute;
         right: 0px;
@@ -136,6 +140,7 @@ h1 {
         border: none;
         outline: none;
       }
+
       .input-icon_alert {
         position: absolute;
         right: 140px;
@@ -144,6 +149,7 @@ h1 {
         display: none;
       }
     }
+
     & #status {
       display: none;
     }
@@ -152,29 +158,36 @@ h1 {
   @media only screen and (max-width: 1200px) {
     padding-left: 110px;
     padding-right: 100px;
+
     .info-content_logo {
+      margin-top: 120px;
       margin-bottom: 80px;
     }
   }
+
   @media only screen and (max-width: 1000px) {
     padding-left: 80px;
     padding-right: 80px;
+
     .info-content_logo {
+      margin-top: 120px;
+
       margin-bottom: 30px;
     }
   }
 
-  @media only screen and (max-width: 920) {
+  @media only screen and (max-width: 920px) {
     padding-left: 0px;
     padding-right: 0px;
-    
+
     .info-content {
       text-align: center;
       justify-content: center;
+      margin-top: 0px;
     }
 
     .info-content_logo {
-      display: none;
+      margin-bottom: 0px;
     }
   }
 }
