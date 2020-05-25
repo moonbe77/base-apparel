@@ -80,6 +80,7 @@ h1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    width: 100%;
   }
   .wrapper .info-wrapper {
     -ms-flex-negative: 2;
@@ -191,11 +192,17 @@ h1 {
 
 @media only screen and (max-width: 920) {
   .info-content {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .info-content .info-content {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .info-content .info-content_logo {
-    margin-bottom: 30px;
+    display: none;
   }
 }
 
