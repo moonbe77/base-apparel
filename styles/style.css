@@ -25,11 +25,11 @@ h1 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,20 +40,16 @@ h1 {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
+.wrapper .model img {
+  width: 100%;
+}
+
 .wrapper .info-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,40 +57,45 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.model img {
-  width: 100%;
+.info-wrapper .info-content_logo {
+  position: absolute;
+  top: 5%;
 }
 
-.info-content {
-  padding-left: 180px;
-  padding-right: 200px;
-  margin-top: -150px;
+.info-wrapper .info-content {
+  width: 54%;
 }
 
-.info-content .info-content_text {
+.info-wrapper .info-content .info-content_text {
   margin-bottom: 40px;
 }
 
-.info-content .info-content_text .we {
+.info-wrapper .info-content .info-content_text .we {
   color: #ce9797;
   font-weight: 300;
 }
 
-.info-content .info-content_text p {
+.info-wrapper .info-content .info-content_text p {
   color: #ce9797;
   line-height: 30px;
 }
 
-.info-content .info-content_form .input-wrapper {
+.info-wrapper .info-content .info-content_form .input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.info-content .info-content_form .input-wrapper input {
+.info-wrapper .info-content .info-content_form .input-wrapper input {
   width: 100%;
   height: 60px;
   border: 1px solid #e0e0e0;
@@ -106,11 +107,11 @@ h1 {
   font-size: 1.2em;
 }
 
-.info-content .info-content_form .input-wrapper input .error {
+.info-wrapper .info-content .info-content_form .input-wrapper input .error {
   border: 1px solid red !important;
 }
 
-.info-content .info-content_form .input-wrapper #button {
+.info-wrapper .info-content .info-content_form .input-wrapper #button {
   position: absolute;
   right: 0px;
   top: 50%;
@@ -126,7 +127,7 @@ h1 {
   outline: none;
 }
 
-.info-content .info-content_form .input-wrapper .input-icon_alert {
+.info-wrapper .info-content .info-content_form .input-wrapper .input-icon_alert {
   position: absolute;
   right: 140px;
   top: 50%;
@@ -135,45 +136,30 @@ h1 {
   display: none;
 }
 
-.info-content .info-content_form #status {
+.info-wrapper .info-content .info-content_form #status {
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .info-content {
-    padding-left: 110px;
-    padding-right: 100px;
-  }
-  .info-content .info-content_logo {
-    margin-top: 120px;
-    margin-bottom: 80px;
-  }
-}
-
 @media only screen and (max-width: 1000px) {
-  .info-content {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .info-content .info-content_logo {
+  padding-left: 80px;
+  padding-right: 80px;
+  .info-content_logo {
     margin-top: 120px;
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 920px) {
+  padding-left: 0px;
+  padding-right: 0px;
   .info-content {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .info-content .info-content {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 0px;
   }
-  .info-content .info-content_logo {
+  .info-content_logo {
     margin-bottom: 0px;
   }
 }
