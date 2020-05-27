@@ -30,7 +30,7 @@ function validateEmail(email) {
 function changeImg(e) {
   let w = window.innerWidth;
 
-  if (w < 921) {
+  if (w < 931) {
     modelImg.src = "./images/hero-mobile.jpg";
   } else {
     modelImg.src = "./images/hero-desktop.jpg";
